@@ -5,19 +5,23 @@
         vertical-align: top;
         box-sizing: border-box;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+        
+    }
 
 body {
 
-    background-color: #FE5246;
     height: 100vh;
+    background-image: url(../images/Flour.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .container {
 
     width: 1000px;
     margin-left: calc(50% - 500px);
-   
+  
 }
 
 header.container {
@@ -28,6 +32,7 @@ header.container {
     justify-content:space-between;
     align-items: center;
     height: 50px;
+  
 }
 
 .navigation {
@@ -41,27 +46,29 @@ header.container {
 
     text-decoration: none;
     text-transform: capitalize;
-    color:white;
+    color: white;
+    font-weight: bold;
+
 
 }
 
 .navigation > a:first-child {
 
     text-transform: uppercase;
+    font-weight: bold;
 
 }
 
 .navigation > a:hover {
 
     text-decoration: underline;
-    color:black;
+   color: #833817;
 }
 
 .navigation >.fa {
 
     color: white;
 }
-
 
 .account  {
 
@@ -75,8 +82,16 @@ header.container {
 
     color:white;
     text-decoration: none;
+    font-weight: bold;
 
     }
+
+.account > a:hover {
+
+    text-decoration: underline;
+    color: #833817;
+
+}
 
 .account >.mygtukas  {
 
@@ -88,8 +103,13 @@ header.container {
     border: solid black 1px;
 }
 
+.account >.mygtukas:hover {
+
+    background-color: #833817;
+}
+
 main >.container {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     position: relative;
    
 }
@@ -103,20 +123,78 @@ main >.container {
     transform: translateY(-50%);
 }
 
-.content {
+    .content {
 
     position: absolute;
-    width: 40%;
-    background-color: darkgreen;
+    width: 35%;
     top: 60%;
     margin-left: calc(50% - 500px);
     left: 0%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap:20px;
+
+
     
 }
+
+.content >h1 {
+
+    color: #250F11;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: oblique;
+
+}
+
+p {
+    width: 100%;
+    color: #250F11;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+.mygtukas1 {
+
+   
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: solid black 1px;
+    color: #250F11;
+    text-transform: capitalize;
+    background-color: white;
+    font-size: 20px;
+}
+
+.mygtukas1:hover {
+
+    background-color: #833817;
+}
+
+.socials {
+
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+  
+   
+}
+
+.fa {
+
+    color: #250F11;
+    font-size: 30px;
+}
+
+
+
 
 
 
